@@ -102,8 +102,11 @@ UMPF doesn't randomly pair domains - it uses a rigorous **6-step protocol** to i
 ### **Why This Pairing Works**
 
 **Abstraction Level Alignment**: Both operate at the "adaptive system dynamics" level
+
 **Monadic Pattern Match**: Strong State monad correspondence across layers
+
 **Graph Structure Similarity**: Modular networks with feedback mechanisms
+
 **Lens Operation Compatibility**: State observation and transformation capabilities
 
 **The Key Insight**: UMPF doesn't force analogies - it **discovers** genuine structural correspondences through systematic analysis, then validates them through rigorous experimentation.
