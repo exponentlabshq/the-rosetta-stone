@@ -1,4 +1,4 @@
-# The Rosetta Stone | The Universal Monadic Pattern Framework 🗿
+# The Rosetta Stone | The Universal Monadic Pattern Framework©
 
 ### Author: Michael Jagdeo
 ### Organization: Exponent Labs LLC
