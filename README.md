@@ -27,7 +27,7 @@
 
 ---
 
-# Just as Leibniz Predicted
+# The Academic Thesis Generator - Just as Leibniz Predicted
 
 ### This One Prompt Proves UMPF is The Rosetta Stone in Monadic Fashion, Just as Leibniz Predicted (paste into an LLM)
 
