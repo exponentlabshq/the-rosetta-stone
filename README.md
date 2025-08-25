@@ -1,7 +1,7 @@
 # The Rosetta Stone | The Universal Monadic Pattern Framework 🗿
 
-Author: Michael Jagdeo
-Organization: Exponent Labs LLC
+### Author: Michael Jagdeo
+### Organization: Exponent Labs LLC
 
 ## AGI Is As AGI Does: The Leibniz I-Ching Indra's Net Conjecture
 
