@@ -8,12 +8,12 @@
 ## 📋 **Table of Contents**
 
 1. [Abstract](#abstract)
-2. [Repository Contents](#-repository-contents)
-3. [The Rosetta Stone: A Four-Layer Monadic Architecture](#-the-rosetta-stone-a-four-layer-monadic-architecture)
-4. [Domain Equivalent Pairs: How UMPF Chooses Cross-Domain Matches](#-domain-equivalent-pairs-how-umpf-chooses-cross-domain-matches)
-5. [Case Studies: Practical Applications of UMPF](#-case-studies-practical-applications-of-umpf)
-6. [Indra's Net: Universal Pattern Recognition](#-indras-net-universal-pattern-recognition)
-7. [I-Ching: Ancient Computational Wisdom](#️-iching-ancient-computational-wisdom)
+2. [The Rosetta Stone: A Four-Layer Monadic Architecture](#-the-rosetta-stone-a-four-layer-monadic-architecture)
+3. [Domain Equivalent Pairs: How UMPF Chooses Cross-Domain Matches](#-domain-equivalent-pairs-how-umpf-chooses-cross-domain-matches)
+4. [Case Studies: Practical Applications of UMPF](#-case-studies-practical-applications-of-umpf)
+5. [Indra's Net: Universal Pattern Recognition](#-indras-net-universal-pattern-recognition)
+6. [I-Ching: Ancient Computational Wisdom](#️-iching-ancient-computational-wisdom)
+7. [Repository Contents](#-repository-contents)
 8. [Scientific Automation Pipeline](#-scientific-automation-pipeline)
 9. [Empirical Validation Results](#-empirical-validation-results)
 10. [Technical Implementation](#-technical-implementation)
@@ -81,63 +81,6 @@ markdown
 ## Analysis
 [Summarize equivalence strength, role of functional concepts in clarifying the mapping, implications for UMPF (e.g., hybrid systems, theoretical unification), and philosophical connections (e.g., Indra’s Net). Highlight cross-domain applications, such as combining insights for new algorithms or systems.]
 ```
----
-
-## 📁 **Repository Contents**
-
-### **Core Research Documents**
-
-#### **Primary Thesis Materials**
-- **[`the-rosetta-stone-thesis.md`](the-rosetta-stone-thesis.md)** - Complete research paper (96.8 KB, 1,033 lines) - The comprehensive academic thesis documenting the UMPF framework, methodology, and validation results
-- **[`the-rosetta-stone-thesis.pdf`](the-rosetta-stone-thesis.pdf)** - PDF version of the thesis (190 KB) - Portable document format for academic submission and printing
-- **[`the-rosetta-stone-thesis-terse.pdf`](the-rosetta-stone-thesis-terse.pdf)** - Terse thesis version (194.8 KB) - Condensed academic thesis for quick reference and review
-- **[`the-rosetta-stone-thesis.m4a`](the-rosetta-stone-thesis.m4a)** - Audio presentation (32.3 MB) - Complete audio recording of the thesis presentation
-- **[`the-rosetta-stone-thesis.mp4`](the-rosetta-stone-thesis.mp4)** - Video presentation (18.9 MB) - Complete video recording with visual aids and demonstrations
-
-#### **Academic Correspondence & Analysis**
-- **[`the-rosetta-stone-letter-to-erica-riehl.md`](the-rosetta-stone-letter-to-erica-riehl.md)** - Academic correspondence (17.7 KB) - Formal letter discussing UMPF research implications and collaboration opportunities
-- **[`the-rosetta-stone-taniyama-shimura.md`](the-rosetta-stone-taniyama-shimura.md)** - Mathematical analysis (9.1 KB) - Specific analysis of Taniyama-Shimura conjecture through UMPF lens
-- **[`the-rosetta-stone-the-universe-as-a-monadic-reactor.md`](the-rosetta-stone-the-universe-as-a-monadic-reactor.md)** - Computational cosmology (24.6 KB) - Analysis of universal structure through monadic computational patterns
-
-#### **Research Validation & System Materials**
-- **[`the-rosetta-stone-claude-audit.md`](the-rosetta-stone-claude-audit.md)** - Research validation (6.3 KB) - Claude's self-audit of UMPF framework accuracy and completeness
-- **[`the-rosetta-stone-system-prompt.md`](the-rosetta-stone-system-prompt.md)** - Framework implementation (4.4 KB) - System prompt for implementing UMPF methodology in AI systems
-- **[`the-rosetta-stone-claude-transcript.txt`](the-rosetta-stone-claude-transcript.txt)** - Research transcript (6.0 MB) - Complete transcript of Claude's research process and UMPF development
-- **[`the-rosetta-stone.json`](the-rosetta-stone.json)** - Computational dataset (45.6 KB) - Structured data containing UMPF pattern analysis and cross-domain mappings
-
-### **Organized Research Collections**
-
-#### **📚 Case Studies Folder**
-Comprehensive collection of practical UMPF applications demonstrating cross-domain pattern transfer:
-
-- **[`case studies/the-rosetta-stone-case-study-DCA-cachecoherentprotocols.md`](case%20studies/the-rosetta-stone-case-study-DCA-cachecoherentprotocols.md)** - Cache coherence analysis (7.5 KB) - DCA cache coherent protocols case study
-- **[`case studies/the-rosetta-stone-case-study-compileroptimization-neuralnetworktraining.md`](case%20studies/the-rosetta-stone-case-study-compileroptimization-neuralnetworktraining.md)** - Compiler optimization (10.2 KB) - Compiler optimization vs. neural network training analysis
-- **[`case studies/the-rosetta-stone-case-study-geneticalgorithms-simulatedannealing.md`](case%20studies/the-rosetta-stone-case-study-geneticalgorithms-simulatedannealing.md)** - Evolutionary computation (8.3 KB) - Genetic algorithms vs. simulated annealing comparison
-- **[`case studies/the-rosetta-stone-case-study-graphalgorithms-gametreesearch.md`](case%20studies/the-rosetta-stone-case-study-graphalgorithms-gametreesearch.md)** - Graph theory applications (9.5 KB) - Graph algorithms vs. game tree search analysis
-- **[`case studies/the-rosetta-stone-case-study-graphtraversal-statespacesearch.md`](case%20studies/the-rosetta-stone-case-study-graphtraversal-statespacesearch.md)** - Search algorithms (8.6 KB) - Graph traversal vs. state space search comparison
-- **[`case studies/the-rosetta-stone-case-study-humanimmunesystem-distributedledgertechnology.md`](case%20studies/the-rosetta-stone-case-study-humanimmunesystem-distributedledgertechnology.md)** - Biological systems (11.3 KB) - Human immune system vs. distributed ledger technology analysis
-- **[`case studies/the-rosetta-stone-case-study-neuralnets-coralreef.md`](case%20studies/the-rosetta-stone-case-study-neuralnets-coralreef.md)** - Neural networks (10.7 KB) - Neural networks vs. coral reef ecosystems analysis
-- **[`case studies/the-rosetta-stone-case-study-raft-PBFTconsensus.md`](case%20studies/the-rosetta-stone-case-study-raft-PBFTconsensus.md)** - Consensus protocols (7.5 KB) - Raft vs. PBFT consensus protocol analysis
-
-#### **🤖 Fine-tuning LLM Folder**
-Machine learning implementation of UMPF equivalency training:
-
-- **[`finetuning-LLM/UMPF_Equivalency_Training.ipynb`](finetuning-LLM/UMPF_Equivalency_Training.ipynb)** - Training notebook (16.3 KB) - Jupyter notebook for UMPF equivalency training
-- **[`finetuning-LLM/UMPF_Equivalency_Training_Fixed.ipynb`](finetuning-LLM/UMPF_Equivalency_Training_Fixed.ipynb)** - Corrected training (20.1 KB) - Fixed version of the training notebook
-- **[`finetuning-LLM/equivalency-training-pairs.json`](finetuning-LLM/equivalency-training-pairs.json)** - Training dataset (127.2 KB) - JSON dataset of domain pairs for training
-- **[`finetuning-LLM/kaggle_equivalency_training.py`](finetuning-LLM/kaggle_equivalency_training.py)** - Training script (13.6 KB) - Python script for Kaggle-based training
-- **[`finetuning-LLM/kaggle_setup.py`](finetuning-LLM/kaggle_setup.py)** - Setup script (3.9 KB) - Python script for Kaggle environment setup
-
-### **Repository Navigation**
-
-**Quick Start**: Begin with [`the-rosetta-stone-thesis.md`](the-rosetta-stone-thesis.md) for the complete research paper
-
-**Case Studies**: Explore the [`case studies/`](case%20studies/) folder for practical applications
-
-**Implementation**: Check the [`finetuning-LLM/`](finetuning-LLM/) folder for technical implementation
-
-**Research Process**: Review [`the-rosetta-stone-claude-transcript.txt`](the-rosetta-stone-claude-transcript.txt) for the complete research journey
-
 ---
 
 ## 🔬 **The Rosetta Stone: A Four-Layer Monadic Architecture**
@@ -319,6 +262,63 @@ The I-Ching's 64 hexagrams provide perfect one-to-one correspondence with UMPF's
 | 64 | ☵☲ Before Completion | 010101 | Pre-Completion | M¹S⁰I²F¹ |
 
 **Ancient-Modern Validation**: 3,000-year-old I-Ching system confirms modern computational discoveries.
+
+---
+
+## 📁 **Repository Contents**
+
+### **Core Research Documents**
+
+#### **Primary Thesis Materials**
+- **[`the-rosetta-stone-thesis.md`](the-rosetta-stone-thesis.md)** - Complete research paper (96.8 KB, 1,033 lines) - The comprehensive academic thesis documenting the UMPF framework, methodology, and validation results
+- **[`the-rosetta-stone-thesis.pdf`](the-rosetta-stone-thesis.pdf)** - PDF version of the thesis (190 KB) - Portable document format for academic submission and printing
+- **[`the-rosetta-stone-thesis-terse.pdf`](the-rosetta-stone-thesis-terse.pdf)** - Terse thesis version (194.8 KB) - Condensed academic thesis for quick reference and review
+- **[`the-rosetta-stone-thesis.m4a`](the-rosetta-stone-thesis.m4a)** - Audio presentation (32.3 MB) - Complete audio recording of the thesis presentation
+- **[`the-rosetta-stone-thesis.mp4`](the-rosetta-stone-thesis.mp4)** - Video presentation (18.9 MB) - Complete video recording with visual aids and demonstrations
+
+#### **Academic Correspondence & Analysis**
+- **[`the-rosetta-stone-letter-to-erica-riehl.md`](the-rosetta-stone-letter-to-erica-riehl.md)** - Academic correspondence (17.7 KB) - Formal letter discussing UMPF research implications and collaboration opportunities
+- **[`the-rosetta-stone-taniyama-shimura.md`](the-rosetta-stone-taniyama-shimura.md)** - Mathematical analysis (9.1 KB) - Specific analysis of Taniyama-Shimura conjecture through UMPF lens
+- **[`the-rosetta-stone-the-universe-as-a-monadic-reactor.md`](the-rosetta-stone-the-universe-as-a-monadic-reactor.md)** - Computational cosmology (24.6 KB) - Analysis of universal structure through monadic computational patterns
+
+#### **Research Validation & System Materials**
+- **[`the-rosetta-stone-claude-audit.md`](the-rosetta-stone-claude-audit.md)** - Research validation (6.3 KB) - Claude's self-audit of UMPF framework accuracy and completeness
+- **[`the-rosetta-stone-system-prompt.md`](the-rosetta-stone-system-prompt.md)** - Framework implementation (4.4 KB) - System prompt for implementing UMPF methodology in AI systems
+- **[`the-rosetta-stone-claude-transcript.txt`](the-rosetta-stone-claude-transcript.txt)** - Research transcript (6.0 MB) - Complete transcript of Claude's research process and UMPF development
+- **[`the-rosetta-stone.json`](the-rosetta-stone.json)** - Computational dataset (45.6 KB) - Structured data containing UMPF pattern analysis and cross-domain mappings
+
+### **Organized Research Collections**
+
+#### **📚 Case Studies Folder**
+Comprehensive collection of practical UMPF applications demonstrating cross-domain pattern transfer:
+
+- **[`case studies/the-rosetta-stone-case-study-DCA-cachecoherentprotocols.md`](case%20studies/the-rosetta-stone-case-study-DCA-cachecoherentprotocols.md)** - Cache coherence analysis (7.5 KB) - DCA cache coherent protocols case study
+- **[`case studies/the-rosetta-stone-case-study-compileroptimization-neuralnetworktraining.md`](case%20studies/the-rosetta-stone-case-study-compileroptimization-neuralnetworktraining.md)** - Compiler optimization (10.2 KB) - Compiler optimization vs. neural network training analysis
+- **[`case studies/the-rosetta-stone-case-study-geneticalgorithms-simulatedannealing.md`](case%20studies/the-rosetta-stone-case-study-geneticalgorithms-simulatedannealing.md)** - Evolutionary computation (8.3 KB) - Genetic algorithms vs. simulated annealing comparison
+- **[`case studies/the-rosetta-stone-case-study-graphalgorithms-gametreesearch.md`](case%20studies/the-rosetta-stone-case-study-graphalgorithms-gametreesearch.md)** - Graph theory applications (9.5 KB) - Graph algorithms vs. game tree search analysis
+- **[`case studies/the-rosetta-stone-case-study-graphtraversal-statespacesearch.md`](case%20studies/the-rosetta-stone-case-study-graphtraversal-statespacesearch.md)** - Search algorithms (8.6 KB) - Graph traversal vs. state space search comparison
+- **[`case studies/the-rosetta-stone-case-study-humanimmunesystem-distributedledgertechnology.md`](case%20studies/the-rosetta-stone-case-study-humanimmunesystem-distributedledgertechnology.md)** - Biological systems (11.3 KB) - Human immune system vs. distributed ledger technology analysis
+- **[`case studies/the-rosetta-stone-case-study-neuralnets-coralreef.md`](case%20studies/the-rosetta-stone-case-study-neuralnets-coralreef.md)** - Neural networks (10.7 KB) - Neural networks vs. coral reef ecosystems analysis
+- **[`case studies/the-rosetta-stone-case-study-raft-PBFTconsensus.md`](case%20studies/the-rosetta-stone-case-study-raft-PBFTconsensus.md)** - Consensus protocols (7.5 KB) - Raft vs. PBFT consensus protocol analysis
+
+#### **🤖 Fine-tuning LLM Folder**
+Machine learning implementation of UMPF equivalency training:
+
+- **[`finetuning-LLM/UMPF_Equivalency_Training.ipynb`](finetuning-LLM/UMPF_Equivalency_Training.ipynb)** - Training notebook (16.3 KB) - Jupyter notebook for UMPF equivalency training
+- **[`finetuning-LLM/UMPF_Equivalency_Training_Fixed.ipynb`](finetuning-LLM/UMPF_Equivalency_Training_Fixed.ipynb)** - Corrected training (20.1 KB) - Fixed version of the training notebook
+- **[`finetuning-LLM/equivalency-training-pairs.json`](finetuning-LLM/equivalency-training-pairs.json)** - Training dataset (127.2 KB) - JSON dataset of domain pairs for training
+- **[`finetuning-LLM/kaggle_equivalency_training.py`](finetuning-LLM/kaggle_equivalency_training.py)** - Training script (13.6 KB) - Python script for Kaggle-based training
+- **[`finetuning-LLM/kaggle_setup.py`](finetuning-LLM/kaggle_setup.py)** - Setup script (3.9 KB) - Python script for Kaggle environment setup
+
+### **Repository Navigation**
+
+**Quick Start**: Begin with [`the-rosetta-stone-thesis.md`](the-rosetta-stone-thesis.md) for the complete research paper
+
+**Case Studies**: Explore the [`case studies/`](case%20studies/) folder for practical applications
+
+**Implementation**: Check the [`finetuning-LLM/`](finetuning-LLM/) folder for technical implementation
+
+**Research Process**: Review [`the-rosetta-stone-claude-transcript.txt`](the-rosetta-stone-claude-transcript.txt) for the complete research journey
 
 ---
 
