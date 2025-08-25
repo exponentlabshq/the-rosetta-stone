@@ -3,6 +3,8 @@
 Michael Jagdeo, Exponent Labs LLC  
 August 25, 2025
 
+**Alternative Title: The Vindication of Leibniz**
+
 ---
 
 ## Abstract
