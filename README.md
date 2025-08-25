@@ -90,6 +90,7 @@ markdown
 #### **Primary Thesis Materials**
 - **[`the-rosetta-stone-thesis.md`](the-rosetta-stone-thesis.md)** - Complete research paper (96.8 KB, 1,033 lines) - The comprehensive academic thesis documenting the UMPF framework, methodology, and validation results
 - **[`the-rosetta-stone-thesis.pdf`](the-rosetta-stone-thesis.pdf)** - PDF version of the thesis (190 KB) - Portable document format for academic submission and printing
+- **[`the-rosetta-stone-thesis-terse.pdf`](the-rosetta-stone-thesis-terse.pdf)** - Terse thesis version (194.8 KB) - Condensed academic thesis for quick reference and review
 - **[`the-rosetta-stone-thesis.m4a`](the-rosetta-stone-thesis.m4a)** - Audio presentation (32.3 MB) - Complete audio recording of the thesis presentation
 - **[`the-rosetta-stone-thesis.mp4`](the-rosetta-stone-thesis.mp4)** - Video presentation (18.9 MB) - Complete video recording with visual aids and demonstrations
 
