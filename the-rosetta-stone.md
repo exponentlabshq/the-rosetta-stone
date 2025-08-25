@@ -1,10 +1,4 @@
-# The Rosetta Stone
-
-## AGI Is As AGI Does
-
-#### The Leibniz I-Ching Indra's Net Conjecture Towards Scientific Automation Through The Universal Monadic Pattern
-
----
+# AGI Is As AGI Does: The Leibniz I-Ching Indra's Net Conjecture Towards Scientific Automation Through The Universal Monadic Pattern
 
 Michael Jagdeo, Exponent Labs LLC  
 August 25, 2025
