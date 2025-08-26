@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndraChain Live Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298, #4a90e2);
+            min-height: 100vh;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .status-healthy {
+            background-color: #10b981;
+            animation: pulse-green 2s infinite;
+        }
+
+        .status-error {
+            background-color: #ef4444;
+            animation: pulse-red 2s infinite;
+        }
+
+        @keyframes pulse-green {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        @keyframes pulse-red {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #4ade80, #3b82f6, #8b5cf6);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+            font-family: 'Monaco', 'Consolas', monospace;
+        }
+
+        .stat-unit {
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+
+        .activity-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+
+        .activity-header {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .activity-log {
+            max-height: 300px;
+            overflow-y: auto;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .activity-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-family: 'Monaco', 'Consolas', monospace;
+            font-size: 0.9rem;
+        }
+
+        .activity-item:last-child {
+            border-bottom: none;
+        }
+
+        .activity-timestamp {
+            opacity: 0.6;
+            font-size: 0.8rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .loading {
+            opacity: 0.5;
+            animation: loading-pulse 1.5s infinite;
+        }
+
+        @keyframes loading-pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 0.8; }
+        }
+
+        .error-message {
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid rgba(239, 68, 68, 0.5);
+            border-radius: 8px;
+            padding: 16px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .stat-value {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Scrollbar styling */
+        .activity-log::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .activity-log::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+
+        .activity-log::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+        }
+
+        .activity-log::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>IndraChain Live Dashboard</h1>
+            <p class="subtitle">Real-time blockchain monitoring powered by UMPF</p>
+            <div id="networkStatus" class="status-indicator">
+                <span id="statusText">Connecting...</span>
+            </div>
+            <div>
+                <small>Last updated: <span id="lastUpdate">--:--:--</span></small>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Block Height</div>
+                <div class="stat-value" id="blockHeight">--</div>
+                <div class="stat-unit">blocks processed</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-label">Connected Peers</div>
+                <div class="stat-value" id="connectedPeers">--</div>
+                <div class="stat-unit">active nodes</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-label">Sync Status</div>
+                <div class="stat-value" id="syncStatus">--</div>
+                <div class="stat-unit">network state</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-label">Total Transactions</div>
+                <div class="stat-value" id="totalTransactions">--</div>
+                <div class="stat-unit">processed</div>
+            </div>
+        </div>
+
+        <div class="activity-section">
+            <div class="activity-header">
+                Network Activity
+            </div>
+            <div class="activity-log" id="activityLog">
+                <div class="activity-item">
+                    <span>Initializing dashboard...</span>
+                    <span class="activity-timestamp" id="initTime">--:--:--</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>
+                <strong>IndraChain Production Network</strong><br>
+                Live API: <a href="https://indrachain-railway-production.up.railway.app" target="_blank">
+                    indrachain-railway-production.up.railway.app
+                </a><br>
+                <span id="corsStatus" style="font-size: 0.9em; opacity: 0.8;">CORS: Checking...</span><br>
+                Powered by Universal Monad Patterns Framework (UMPF)
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'https://indrachain-railway-production.up.railway.app';
+        const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
+        let isOnline = false;
+        let previousBlockHeight = 0;
+        let previousTransactions = 0;
+        let useCorsProxy = false;
+
+        // DOM elements
+        const elements = {
+            networkStatus: document.getElementById('networkStatus'),
+            statusText: document.getElementById('statusText'),
+            lastUpdate: document.getElementById('lastUpdate'),
+            blockHeight: document.getElementById('blockHeight'),
+            connectedPeers: document.getElementById('connectedPeers'),
+            syncStatus: document.getElementById('syncStatus'),
+            totalTransactions: document.getElementById('totalTransactions'),
+            activityLog: document.getElementById('activityLog'),
+            corsStatus: document.getElementById('corsStatus')
+        };
+
+        // Format numbers with commas
+        function formatNumber(num) {
+            return new Intl.NumberFormat().format(num);
+        }
+
+        // CORS-safe fetch with fallback
+        async function corsSafeFetch(url, options = {}) {
+            try {
+                // First try direct fetch
+                const response = await fetch(url, {
+                    ...options,
+                    mode: 'cors',
+                    credentials: 'omit'
+                });
+                updateCorsStatus('Direct', 'success');
+                return response;
+            } catch (error) {
+                if (error.name === 'TypeError' && error.message.includes('CORS')) {
+                    console.warn('CORS error detected, trying proxy...');
+                    updateCorsStatus('Proxy', 'warning');
+                    // Fallback to CORS proxy
+                    const proxyUrl = CORS_PROXY + url;
+                    try {
+                        const proxyResponse = await fetch(proxyUrl, {
+                            ...options,
+                            mode: 'cors',
+                            credentials: 'omit'
+                        });
+                        updateCorsStatus('Proxy', 'success');
+                        return proxyResponse;
+                    } catch (proxyError) {
+                        updateCorsStatus('Failed', 'error');
+                        throw proxyError;
+                    }
+                }
+                updateCorsStatus('Failed', 'error');
+                throw error;
+            }
+        }
+
+        // Update CORS status indicator
+        function updateCorsStatus(method, status) {
+            if (!elements.corsStatus) return;
+            
+            const statusColors = {
+                'success': '#10b981',
+                'warning': '#f59e0b',
+                'error': '#ef4444'
+            };
+            
+            elements.corsStatus.textContent = `CORS: ${method}`;
+            elements.corsStatus.style.color = statusColors[status] || '#6b7280';
+        }
+
+        // Get current time string
+        function getCurrentTime() {
+            return new Date().toLocaleTimeString('en-US', { hour12: false });
+        }
+
+        // Add activity log entry
+        function addActivity(message) {
+            const activityItem = document.createElement('div');
+            activityItem.className = 'activity-item';
+            activityItem.innerHTML = `
+                <span>${message}</span>
+                <span class="activity-timestamp">${getCurrentTime()}</span>
+            `;
+            
+            elements.activityLog.insertBefore(activityItem, elements.activityLog.firstChild);
+            
+            // Keep only last 20 entries
+            while (elements.activityLog.children.length > 20) {
+                elements.activityLog.removeChild(elements.activityLog.lastChild);
+            }
+        }
+
+        // Update network status indicator
+        function updateNetworkStatus(healthy) {
+            if (healthy) {
+                elements.networkStatus.className = 'status-indicator status-healthy';
+                elements.statusText.textContent = 'Network Healthy';
+                if (!isOnline) {
+                    addActivity('✅ Network connection restored');
+                    isOnline = true;
+                }
+            } else {
+                elements.networkStatus.className = 'status-indicator status-error';
+                elements.statusText.textContent = 'Network Error';
+                if (isOnline) {
+                    addActivity('❌ Network connection lost');
+                    isOnline = false;
+                }
+            }
+        }
+
+        // Fetch health data
+        async function fetchHealth() {
+            try {
+                const response = await corsSafeFetch(`${API_BASE}/health`, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    }
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                updateNetworkStatus(data.status === 'healthy');
+                return true;
+            } catch (error) {
+                console.error('Health check failed:', error);
+                updateNetworkStatus(false);
+                return false;
+            }
+        }
+
+        // Fetch blockchain status
+        async function fetchStatus() {
+            try {
+                const response = await corsSafeFetch(`${API_BASE}/api/status`, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    }
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                
+                // Update block height
+                if (data.blockHeight && data.blockHeight !== previousBlockHeight) {
+                    elements.blockHeight.textContent = formatNumber(data.blockHeight);
+                    if (previousBlockHeight > 0) {
+                        const increment = data.blockHeight - previousBlockHeight;
+                        addActivity(`📦 New block mined: #${formatNumber(data.blockHeight)} (+${increment})`);
+                    }
+                    previousBlockHeight = data.blockHeight;
+                }
+                
+                // Update peers
+                if (data.connectedPeers !== undefined) {
+                    elements.connectedPeers.textContent = data.connectedPeers;
+                }
+                
+                // Update sync status
+                if (data.syncStatus) {
+                    elements.syncStatus.style.color = '#10b981';
+                } else {
+                    elements.syncStatus.style.color = '#f59e0b';
+                }
+                
+                return true;
+            } catch (error) {
+                console.error('Failed to fetch status:', error);
+                return false;
+            }
+        }
+
+        // Fetch metrics
+        async function fetchMetrics() {
+            try {
+                const response = await corsSafeFetch(`${API_BASE}/metrics`, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'text/plain'
+                    }
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const text = await response.text();
+                
+                // Parse Prometheus format
+                const lines = text.split('\n');
+                for (const line of lines) {
+                    if (line.startsWith('indra_transactions_total')) {
+                        const value = parseInt(line.split(' ')[1]);
+                        if (value && value !== previousTransactions) {
+                            elements.totalTransactions.textContent = formatNumber(value);
+                            if (previousTransactions > 0) {
+                                const increment = value - previousTransactions;
+                                addActivity(`💰 Transactions processed: ${formatNumber(value)} (+${increment})`);
+                            }
+                            previousTransactions = value;
+                        }
+                    }
+                }
+                
+                return true;
+            } catch (error) {
+                console.error('Failed to fetch metrics:', error);
+                return false;
+            }
+        }
+
+        // Test CORS connectivity
+        async function testCorsConnectivity() {
+            try {
+                updateCorsStatus('Testing', 'warning');
+                await corsSafeFetch(`${API_BASE}/health`, { method: 'GET' });
+                console.log('CORS connectivity test passed');
+            } catch (error) {
+                console.error('CORS connectivity test failed:', error);
+                updateCorsStatus('Failed', 'error');
+            }
+        }
+
+        // Main update function
+        async function updateDashboard() {
+            const startTime = Date.now();
+            
+            // Add loading state
+            Object.values(elements).forEach(el => {
+                if (el && el.classList) {
+                    el.classList.add('loading');
+                }
+            });
+            
+            try {
+                // Fetch all data concurrently
+                const [healthOk, statusOk, metricsOk] = await Promise.all([
+                    fetchHealth(),
+                    fetchStatus(),
+                    fetchMetrics()
+                ]);
+                
+                // Update last update time
+                elements.lastUpdate.textContent = getCurrentTime();
+                
+                // Log successful update
+                const duration = Date.now() - startTime;
+                if (healthOk && statusOk && metricsOk) {
+                    addActivity(`🔄 Dashboard updated (${duration}ms)`);
+                }
+                
+            } catch (error) {
+                console.error('Dashboard update failed:', error);
+                addActivity('⚠️  Dashboard update failed');
+            } finally {
+                // Remove loading state
+                Object.values(elements).forEach(el => {
+                    if (el && el.classList) {
+                        el.classList.remove('loading');
+                    }
+                });
+            }
+        }
+
+        // Initialize dashboard
+        function init() {
+            addActivity('🚀 IndraChain Dashboard initialized');
+            addActivity('📡 Connecting to production network...');
+            
+            // Test CORS connectivity first
+            testCorsConnectivity();
+            
+            // Initial update
+            updateDashboard();
+            
+            // Set up periodic updates
+            setInterval(updateDashboard, 10000); // Update every 10 seconds
+        }
+
+        // Handle page visibility changes
+        document.addEventListener('visibilitychange', () => {
+            if (!document.hidden) {
+                addActivity('👁️  Dashboard focus restored');
+                updateDashboard();
+            }
+        });
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', init);
+        
+        // Handle errors
+        window.addEventListener('error', (event) => {
+            console.error('Dashboard error:', event.error);
+            addActivity('❌ Dashboard error occurred');
+        });
+    </script>
+</body>
+</html>
