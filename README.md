@@ -332,15 +332,15 @@ The I-Ching's 64 hexagrams provide perfect one-to-one correspondence with UMPF's
 #### **📚 Case Studies Folder**
 Comprehensive collection of practical UMPF applications demonstrating cross-domain pattern transfer:
 
-- **[`case studies/the-rosetta-stone-case-study-DCA-cachecoherentprotocols.md`](case%20studies/the-rosetta-stone-case-study-DCA-cachecoherentprotocols.md)** - Cache coherence analysis (7.5 KB) - DCA cache coherent protocols case study
-- **[`case studies/the-rosetta-stone-case-study-compileroptimization-neuralnetworktraining.md`](case%20studies/the-rosetta-stone-case-study-compileroptimization-neuralnetworktraining.md)** - Compiler optimization (10.2 KB) - Compiler optimization vs. neural network training analysis
-- **[`case studies/the-rosetta-stone-case-study-geneticalgorithms-simulatedannealing.md`](case%20studies/the-rosetta-stone-case-study-geneticalgorithms-simulatedannealing.md)** - Evolutionary computation (8.3 KB) - Genetic algorithms vs. simulated annealing comparison
-- **[`case studies/the-rosetta-stone-case-study-graphalgorithms-gametreesearch.md`](case%20studies/the-rosetta-stone-case-study-graphalgorithms-gametreesearch.md)** - Graph theory applications (9.5 KB) - Graph algorithms vs. game tree search analysis
-- **[`case studies/the-rosetta-stone-case-study-graphtraversal-statespacesearch.md`](case%20studies/the-rosetta-stone-case-study-graphtraversal-statespacesearch.md)** - Search algorithms (8.6 KB) - Graph traversal vs. state space search comparison
-- **[`case studies/the-rosetta-stone-case-study-humanimmunesystem-distributedledgertechnology.md`](case%20studies/the-rosetta-stone-case-study-humanimmunesystem-distributedledgertechnology.md)** - Biological systems (11.3 KB) - Human immune system vs. distributed ledger technology analysis
-- **[`case studies/the-rosetta-stone-case-study-neuralnets-coralreef.md`](case%20studies/the-rosetta-stone-case-study-neuralnets-coralreef.md)** - Neural networks (10.7 KB) - Neural networks vs. coral reef ecosystems analysis
-- **[`case studies/the-rosetta-stone-case-study-raft-PBFTconsensus.md`](case%20studies/the-rosetta-stone-case-study-raft-PBFTconsensus.md)** - Consensus protocols (7.5 KB) - Raft vs. PBFT consensus protocol analysis
-- **[`case studies/the-rosetta-stone-case-study-thewayofgoodvibes-deathnote.md`](case%20studies/the-rosetta-stone-case-study-thewayofgoodvibes-deathnote.md)** - Anime analysis (12.3 KB) - Death Note anime vs. computational pattern recognition analysis
+- **[`case-studies/the-rosetta-stone-case-study-DCA-cachecoherentprotocols.md`](case-studies/the-rosetta-stone-case-study-DCA-cachecoherentprotocols.md)** - Cache coherence analysis (7.5 KB) - DCA cache coherent protocols case study
+- **[`case-studies/the-rosetta-stone-case-study-compileroptimization-neuralnetworktraining.md`](case-studies/the-rosetta-stone-case-study-compileroptimization-neuralnetworktraining.md)** - Compiler optimization (10.2 KB) - Compiler optimization vs. neural network training analysis
+- **[`case-studies/the-rosetta-stone-case-study-geneticalgorithms-simulatedannealing.md`](case-studies/the-rosetta-stone-case-study-geneticalgorithms-simulatedannealing.md)** - Evolutionary computation (8.3 KB) - Genetic algorithms vs. simulated annealing comparison
+- **[`case-studies/the-rosetta-stone-case-study-graphalgorithms-gametreesearch.md`](case-studies/the-rosetta-stone-case-study-graphalgorithms-gametreesearch.md)** - Graph theory applications (9.5 KB) - Graph algorithms vs. game tree search analysis
+- **[`case-studies/the-rosetta-stone-case-study-graphtraversal-statespacesearch.md`](case-studies/the-rosetta-stone-case-study-graphtraversal-statespacesearch.md)** - Search algorithms (8.6 KB) - Graph traversal vs. state space search comparison
+- **[`case-studies/the-rosetta-stone-case-study-humanimmunesystem-distributedledgertechnology.md`](case-studies/the-rosetta-stone-case-study-humanimmunesystem-distributedledgertechnology.md)** - Biological systems (11.3 KB) - Human immune system vs. distributed ledger technology analysis
+- **[`case-studies/the-rosetta-stone-case-study-neuralnets-coralreef.md`](case-studies/the-rosetta-stone-case-study-neuralnets-coralreef.md)** - Neural networks (10.7 KB) - Neural networks vs. coral reef ecosystems analysis
+- **[`case-studies/the-rosetta-stone-case-study-raft-PBFTconsensus.md`](case-studies/the-rosetta-stone-case-study-raft-PBFTconsensus.md)** - Consensus protocols (7.5 KB) - Raft vs. PBFT consensus protocol analysis
+- **[`case-studies/the-rosetta-stone-case-study-thewayofgoodvibes-deathnote.md`](case-studies/the-rosetta-stone-case-study-thewayofgoodvibes-deathnote.md)** - Anime analysis (12.3 KB) - Death Note anime vs. computational pattern recognition analysis
 
 #### **🤖 Fine-tuning LLM Folder**
 Machine learning implementation of UMPF equivalency training:
@@ -355,7 +355,7 @@ Machine learning implementation of UMPF equivalency training:
 
 **Quick Start**: Begin with [`the-rosetta-stone-thesis.md`](the-rosetta-stone-thesis.md) for the complete research paper
 
-**Case Studies**: Explore the [`case studies/`](case%20studies/) folder for practical applications
+**Case Studies**: Explore the [`case-studies/`](case-studies/) folder for practical applications
 
 **Implementation**: Check the [`finetuning-LLM/`](finetuning-LLM/) folder for technical implementation
 
@@ -500,7 +500,7 @@ This repository contains comprehensive research materials documenting the UMPF f
 
 1. **Browse repository contents**: [Repository Contents](#-repository-contents) for complete file overview
 2. **Read the complete thesis**: [`the-rosetta-stone-thesis.md`](the-rosetta-stone-thesis.md) for comprehensive research paper
-3. **Explore case studies**: [`case studies/`](case%20studies/) folder for practical applications
+3. **Explore case studies**: [`case-studies/`](case-studies/) folder for practical applications
 4. **Review implementation**: [`finetuning-LLM/`](finetuning-LLM/) folder for technical code
 5. **Understand methodology**: Section 7 for scientific automation pipeline
 6. **Review validation results**: Section 8 for empirical evidence
