@@ -1,0 +1,12 @@
+# CITATION.cff
+cff-version: 1.2.0
+message: "If you use this research methodology, please cite as below."
+title: "The Rosetta Stone of UMPF: A Research Methodology"
+authors:
+  - family-names: "Jagdeo"
+    given-names: "Michael"
+    affiliation: "Exponent Labs LLC"
+date-released: 2025-08-27
+version: "1.0"
+doi: "10.5281/zenodo.XXXXXXX"
+url: "https://github.com/exponentlabshq/the-rosetta-stone"

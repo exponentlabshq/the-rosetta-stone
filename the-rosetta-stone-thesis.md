@@ -5,6 +5,8 @@ August 25, 2025
 
 **Alternative Title: The Vindication of Leibniz**
 
+Cite this research: Jagdeo, Michael. (2025). The Rosetta Stone of UMPF: A Research Methodology. Exponent Labs LLC. https://github.com/exponentlabshq/the-rosetta-stone
+
 ---
 
 ## Abstract
