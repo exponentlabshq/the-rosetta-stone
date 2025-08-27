@@ -1,6 +1,8 @@
-Perfect — let’s make it fully **abstract and elegant**, treating the LLM as a generic refinement operator and keeping the first-pass UMPF mapping symbolic.
+# Scientific Automation
 
----
+## Why Should I Care?
+
+The case studies prove that we should automate science by using LLMs as peer review machines to create papers automatically and send to the paper authors to minimize mean-time-to-productive inspiration. We'll start with Nobel Prize Winners and the community that Curt Jaimungal has built, going through one podcast at a time - i.e. Erica Riehl - and sending them a paper that extends their work.
 
 ### Abstract Pipeline
 
