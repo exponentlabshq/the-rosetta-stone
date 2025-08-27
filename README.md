@@ -5,6 +5,11 @@
 ### Cite this: 
 Jagdeo, M. (2025). The Rosetta Stone of UMPF: A Research Methodology. Exponent Labs LLC. https://github.com/exponentlabshq/the-rosetta-stone
 
+## The Rosetta Stone in Action (code and demo)
+
+You can see The Rosetta Stone working on Nobel Peace Prize winning papers here: 
+https://github.com/exponentlabshq/scientific-intuition-engine
+
 ## AGI Is As AGI Does: The Leibniz I-Ching Indra's Net Conjecture
 
 ## 📋 **Table of Contents**

@@ -6,6 +6,11 @@
 
 ### The Big Idea: Scientific Automation at Scale with LLMs. The next step is to automate the creation of case-studies-as-formal-papers that we can then send to all of the Nobel Prize potentialists from Curt Jaimungal's Theory of Everything podcast. After all, we went to the same school, albeit different campuses.
 
+## The Rosetta Stone in Action (code and demo)
+
+You can see The Rosetta Stone working on Nobel Peace Prize winning papers here: 
+https://github.com/exponentlabshq/scientific-intuition-engine
+
 ## Core UMPF Thesis: The Universe as a Monadic Reactor
 
 The **Universal Monad Patterns Framework (UMPF)** establishes that all computational systems—from quantum mechanics to neural networks to social networks—exhibit identical structural patterns through four monadic abstraction layers:
