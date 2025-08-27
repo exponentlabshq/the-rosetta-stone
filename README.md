@@ -2,7 +2,7 @@
 
 ### Author: Michael Jagdeo
 ### Organization: Exponent Labs LLC
-### 
+### Cite this: 
 Jagdeo, M. (2025). The Rosetta Stone of UMPF: A Research Methodology. Exponent Labs LLC. https://github.com/exponentlabshq/the-rosetta-stone
 
 ## AGI Is As AGI Does: The Leibniz I-Ching Indra's Net Conjecture
