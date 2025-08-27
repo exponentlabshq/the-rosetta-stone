@@ -2,6 +2,10 @@
 
 > *"Each simple substance has relations which express all the others, and, consequently, it is a perpetual living mirror of the universe."* — Gottfried Wilhelm Leibniz, *Monadology*
 
+**See this reseach in action: https://claude.ai/share/d8ca3be2-75e6-4d24-affc-454191aecf87**
+
+### The Big Idea: Scientific Automation at Scale with LLMs. The next step is to automate the creation of case-studies-as-formal-papers that we can then send to all of the Nobel Prize potentialists from Curt Jaimungal's Theory of Everything podcast. After all, we went to the same school, albeit different campuses.
+
 ## Core UMPF Thesis: The Universe as a Monadic Reactor
 
 The **Universal Monad Patterns Framework (UMPF)** establishes that all computational systems—from quantum mechanics to neural networks to social networks—exhibit identical structural patterns through four monadic abstraction layers:
