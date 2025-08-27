@@ -34,6 +34,9 @@ Jagdeo, M. (2025). The Rosetta Stone of UMPF: A Research Methodology. Exponent L
 
 **Objective**: Establish the Universal Monad Patterns Framework (UMPF) as a systematic research methodology that reduces mean-time-to-productive-thesis from months to minutes through automated cross-domain pattern discovery. 
 
+**Implementation**:
+https://github.com/exponentlabshq/scientific-intuition-engine
+
 **Methodology**: UMPF decomposes computational and natural systems using monadic structures (Maybe, State, IO, Free), graph theory (nodes, edges, connectivity), and lens operations (get/set transformations) across four abstraction layers, integrated with Leibnizian philosophy, Indra's Net interconnectedness, I-Ching functional analysis, and a Universal Table of Elements for systematic pattern lookup. 
 
 **Significance**: Scientific automation through LLM-assisted hypothesis generation, enabling researchers to discover transferable mechanisms between maximally distinct domains with statistical rigor and reproducible protocols. 
