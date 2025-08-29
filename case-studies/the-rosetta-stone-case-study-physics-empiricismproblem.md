@@ -186,3 +186,8 @@ Claude Conversation: https://claude.ai/share/c54b82bc-2704-4a83-9ed7-3e3618247b6
 Claude Final Paper: https://claude.ai/public/artifacts/013e2c11-0dd6-4eac-b1b4-bcc4eff12691
 
 ChatGPT: https://chatgpt.com/share/68b1579b-01d4-8010-b866-04dbabec134a
+
+Grok: https://x.com/i/grok/share/ing8OMvt6jbZlSuEYZwDPrId1
+
+Manus: https://manus.im/share/6eGkEGejG7bXxMDUO8EZAg?replay=1 
+
