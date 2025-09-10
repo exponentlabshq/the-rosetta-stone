@@ -11,6 +11,9 @@
 > **[📄 Complete Academic Thesis (522 lines)](./the-rosetta-stone-thesis-latest.md)**  
 > *The definitive work on monadic coordination patterns*
 
+> **[🤖 Diffusion LLM Audit](./the-rosetta-stone-thesis-latest-diffusion-audit.md)**  
+> *Enhanced analysis by [Inception Labs](https://www.inceptionlabs.ai/) using diffusion-based LLM technology*
+
 ---
 
 ## 🎯 **What This Is**
