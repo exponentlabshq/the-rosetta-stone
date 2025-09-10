@@ -2,7 +2,7 @@
 
 **A Systematic Framework for Logic-Driven System Design**
 
-*Author: Michael Jagdeo | Exponent Labs LLC*
+*Author: Blockface | Michael Jagdeo | Exponent Labs LLC*
 
 ## What This Is
 
@@ -54,3 +54,4 @@ Exponent Labs LLC. https://github.com/exponentlabshq/the-rosetta-stone
 
 **License**: Copyright © 2025 Exponent Labs LLC. All rights reserved.
 
+BONUS: How this was made: https://manus.im/share/X3U6upYQRwbIIxyV6eo7NL?replay=1
