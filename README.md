@@ -4,6 +4,8 @@
 
 **A Systematic Framework for Logic-Driven System Design**
 
+![The Rosetta Stone Framework](./exponentlabs-paper-gif-rosetta-stone-before-gif.gif)
+
 ---
 
 ## 📖 **Latest Research**
